@@ -1,0 +1,932 @@
+
+body{
+    background-color: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+}
+ img{
+    border-radius: 2px;
+ }
+.flex-block{
+    display: flex;
+}
+.miniatura-noticia-destaqueoticiaBox{
+    border-radius: 2px;
+}
+/* header */
+.top-bar1{
+    height: 180px;
+    display: flex;
+    background: #102B3F;
+    color: aliceblue;
+}
+.top-bar1 img{
+    max-width: 600px;
+    max-height: 200px;
+    margin: 50px auto;
+}
+.logo-meio{
+    margin: 0 auto;
+}
+
+/* menu topo */
+.barra-menu{
+    background: #FFFFFF;
+    box-shadow:0px 5px 5px #BEBEBE;
+}
+.menu-topo{
+    margin: 0 auto; 
+}
+.menu-topo ul{
+    display: inline-flex;
+    list-style: none; 
+}
+.menu-topo ul li{
+    padding: 15px 20px 3px;
+}
+.menu-topo ul li a {
+    text-decoration: none;
+    color: #102B3F;
+    text-transform: uppercase;
+}
+.menu-menu-principal-container{
+    text-align: center;
+}
+/* destaque */
+.card-categoria{
+    background-color: #00000043;
+    display: inline-block;
+    margin: 10px;
+    top: 5px;
+    position: absolute;
+    padding: 5px 5px 5px;
+    border-radius: 5px;
+    color: #f1f1f1;
+}
+.card-categoria a{
+    text-decoration: none;
+    list-style: none;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.post-categories{
+    list-style: none;
+    margin:0px;
+    padding:3px 5px;
+    font-size: 10px;
+    
+}
+section.noticias {
+    padding-top: 40px;
+}
+
+section.noticias h2{
+    font-size: 36px;
+}
+section.noticias h2::before {
+    content: '\f1ea';
+    color: #00cd8e;
+}
+
+section.noticias .btn {
+    margin-top: 32px;
+}
+.miniatura-noticia-destaque{
+    position: relative;
+    height: 450px;
+    margin-bottom: 30px;
+}
+
+.miniatura-noticia {
+    position: relative;
+    height: 210px;
+    margin-bottom: 30px;
+}
+
+.titulo-noticia {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0.85) 100%);
+    height: 100%;
+}
+
+.miniatura-noticia .titulo-noticia h3,
+.miniatura-noticia-destaque .titulo-noticia h3  {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    max-height: 67px;
+}
+.noticias button{
+    display: none;
+}
+/* publicidades */
+.publicidade1,
+.publicidade3{
+    margin: 0 auto;
+    width: 100%;
+}
+.publicidade3{
+    margin-top: 30px;
+}
+/* economia */
+
+.economia,
+.guiaMais,
+.guiaPolitico,
+.guiaPolicial,
+.guiaGeral,
+.guia{
+    border-top: #102B3F 5px solid;
+    display: flex;
+    margin-top: 50px;
+}
+.guia{
+    width: 100%;
+}
+.guiaGeralPost{
+    border-top: #102B3F 5px solid;
+    margin-top: 50px;
+}
+.economia a,
+.guiaMais a,
+.guiaPolicial a,
+.guiaPolitico a{
+    text-decoration: none;
+}
+
+.economia-titulo a h3,
+.guiaMais-titulo a h3,
+.guiaPolicial-titulo a h3,
+.guiaPolitico-titulo a h3,
+.guia-titulo a h3{
+    color:#FFFFFF;
+    margin-bottom: 0px;
+}
+.economia-bloco,
+.guiaMais-bloco,
+.guiaPolitico-bloco{
+    margin-top: 70px;
+    background: #FFFFFF;
+    display: block;
+    max-width: 875px;
+}
+.guia-bloco{
+    margin-top: 70px;
+    background: #FFFFFF;
+    display: block;
+}
+
+.busca{
+    background-color: #102B3F;
+    text-align: end;
+    margin: 0px 0px;
+    padding: 0px;
+    padding: 10px 20px 0 0;
+}
+.btn-pesquisar{
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+form {
+    margin-bottom: 0;
+}
+.search-field{
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    margin-right: -5px;
+}
+
+.economia-titulo,
+.guiaMais-titulo,
+.guiaPolicial-titulo,
+.guiaPolitico-titulo,
+.guia-titulo{
+    font-size: 20px ;
+    background-color: #102B3F;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 65px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.guiaPolitico-post,
+.guiaPolicial-post
+.guia-post{
+    display: flex;
+    text-decoration: none;
+    padding:10px 30px;
+    flex-wrap: wrap;
+}
+
+.economia-post,
+.guiaPolicial-post,
+.guiaMais-post{
+    display: flex;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.economia-post-div,
+.guiaMais-post-div{
+    width: 40%;
+}
+
+
+.economia-post img,
+.guiaMais-post img,
+.guiaPolitico-post img{
+    width: 100%;
+    height: 200px;
+}
+.economia-txt,
+.guiaPolicial-txt,
+.guiaMais-txt{
+    width:60% ;
+}    
+
+.guiaPolitico-txt h3,
+.guiaPolicial-txt h3,
+.guiaMais-txt h3,
+.economia-txt h3{
+    color: #102B3F;
+    
+}
+.economia-txt h3 span,
+.guiaMais-txt h3 span,
+.guiaPolicial-post-div h3 span,
+.guiaPolitico-post-div h3 span,
+.guiaPolicial-post-div-mini p,
+.guiaPolitico-post-div-mini p {
+    display: inline-block;
+    margin-left: 10px;
+    color: #919ba3;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.economia-verMais,
+.guiaMais-verMais,
+.guiaPolitico-verMais,
+.guiaPolicial-verMais{
+    text-align: center;
+    font-size: 18px;
+    padding: 25px;
+    color: #102B3F;
+ 
+}
+.economia-widget{
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    margin: 70px 0 20px 45px;
+    text-align: center;
+}
+
+.economia-propaganda{
+    width: 400px;
+    background: #fff;
+    margin: 0 0 0px 45px;
+    padding: 10px;
+    margin-bottom: 0px;
+    height: 620px;
+}
+
+.publi_5{
+    margin-top: 40px;
+}
+
+/* guiaMais */
+
+.guiaMais-bloco{
+    margin-right: 35px;
+}
+.guiaMais-widget{
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    margin: 70px 45px 20px 0;
+    text-align: center;
+}
+.guiaMais-txt,
+.economia-txt,
+.guiaPolitico-post-div,
+.guiaPolicial-post-div{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: #919ba3;
+    
+}
+.guiaMais-txt{
+    padding-left: 10px;
+}
+.economia-txt{
+    padding-left: 20px;
+}
+.guiaMais-ultimas-noticias{
+    background: #FFFFFF;
+    margin-top: 70px;
+    font-size: 18px;
+    height: 571px;
+    width: 400px;
+    padding: 20px;
+}
+.guiaMais-ultimas-noticias p{
+    color: #797979;
+}
+.guiaMais-propaganda{
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: #FFFFFF;
+    width: 400px;
+}
+.guiaMais-propaganda p{
+    margin-bottom: 0;
+}
+
+.guiaPolitico-noticias,
+.guiaPolicial-noticias{
+    display: flex;
+}
+
+.guiaPolitico-noticias-p1,
+.guiaPolitico-noticias-p2{
+    width: 50%;
+}
+
+.guiaPolitico-post-div h3{
+    color: #102B3F
+}
+.guiaPolitico-post-div h3{
+    color: #102B3F
+}
+
+.guiaPolitico-post-div-mini{
+    display: flex;
+    align-items: center;
+}
+.guiaPolitico-post-div-mini-txt{
+    padding: 10px;
+}
+.guiaPolitico-post-div-mini h3{
+    font-size: 16px;
+    color: #102B3F;
+}
+.guiaPolitico-post-div-mini img{
+    width: 120px;
+    height: auto;
+    padding-top: 12px;
+}
+.guiaPolitico-propaganda{
+    width: 420px;
+    height: 685px;
+    background: #ffffff;
+    margin-left: 45px;
+    margin-top: 70px;
+
+}
+.guiaPolitico-propaganda p{
+    text-align: center;
+    padding-top: 17px;
+    margin-bottom: 0px;
+}
+.guiaPolitico-propaganda-6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.guiaGeral-bloco{
+    margin-top: 45px;
+    background: #ffffff;
+    width: 100%;
+    margin-bottom: 45px;
+}
+.guiaGeral-bloco .guiaGeral-titulo{
+    text-align: center;
+}
+.guiaGeral-titulo h3{
+    font-size: 20px;
+    background-color: #102B3F;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 65px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.guiaGeral-bloco a{
+    text-decoration: none;
+}
+.guia-noticias,
+.guiaGeral-noticias{
+    display: flex;
+    justify-content: space-around;
+}
+.guiaGeral-post-div{
+    margin-top: 20px;
+    padding-top: 30px;
+}
+.guia-post-div,
+.guiaGeral-post-div{
+    width: 250px;
+}
+.guia-post-div img,
+.guiaGeral-post-div img{
+    width: 250px;
+    height: 200px;
+}
+
+.guia-post-div h3,
+.guiaGeral-post-div h3{
+    color: #102B3F;
+    font-size: 20px;
+}
+.guia-post-div h3 span,
+.guiaGeral-post-div h3 span{
+    color: #919ba3;
+    font-size: 14px;
+}
+.guiaGeral-post-div p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #919ba3;
+}
+.guiaGeral-noticias a{
+    text-align: center;
+    margin: 0 auto;
+    color: #102B3F;
+}
+#sidebar-posts{
+    background-color: #ffffff;
+}
+
+footer{
+    background: #102B3F;
+    color: #FFFFFF;
+}
+.widgets-rodape{
+    display: flex;
+    padding: 45px 0px;
+    justify-content: space-between;
+
+}
+.widgets-rodape .footer-personalizado{
+    padding: 0 15px;
+    width: 24%;
+}
+
+.copyright{
+    text-align: center;
+}
+.copyright-text{
+    padding: 20px;
+}
+
+/* post interno */
+.categorias{
+    margin-bottom: 20px;
+    
+}
+
+.post-interno img{
+    justify-content: center;
+}
+
+.post-interno-titulo{
+    font-weight:700;
+    font-Size:32px;
+    Line-height:38.88px;
+}
+.post-interno-data{
+    color: #919ba3;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.guiaGeralPost-titulo{
+    margin-top: 40px;
+    text-decoration: none;
+    color: #3A7894;
+}
+.guiaGeralPost-post{
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.guiaGeralPost-post a {
+    text-decoration: none;
+}
+
+#post-interno{
+    padding-top: 40px;   
+}
+
+.publicidade1{
+	padding-top:40px;
+}
+
+@media(width:1200){
+    .economia-txt h3,
+    .guiaMais-txt h3{
+        font-size: 1.2em;
+    }
+    
+    .economia-txt p,
+    .guiaMais-txt p{
+        font-size: .6rem;
+    }
+}
+
+
+
+
+.main-menu{
+    padding: 0;
+	z-index: 9999;
+}
+.main-menu ul{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 1px;
+}
+.main-menu ul li{
+    display: inline;
+    margin: 0 5px 0 0;
+}
+.main-menu ul li:last-child{
+    margin: 0;
+}
+.main-menu > ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px 20px;
+}
+.main-menu ul li a.nav-link:first-child{
+    padding-left: 0 !important;
+}
+.main-menu ul li ul{
+    background-color: #fff;
+	width: auto;
+}
+.main-menu ul li ul li{
+    margin: 0;
+}
+.main-menu ul li ul li a{
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.main-menu .dropdown-item:focus,
+.main-menu .dropdown-item:hover{
+    color:#fff;
+    background-color: #f6f6f6;
+}
+.main-menu .dropdown:hover>.dropdown-menu,
+.main-menu .dropup:hover>.dropdown-menu{
+    display: block;
+}
+.main-menu .dropdown-item.active,
+.main-menu .dropdown-item:active{
+    background-color: #999999;
+}
+.main-menu .navbar-toggler{
+    border: none;
+    padding-right: 0;
+}
+.main-menu .dropdown-toggle::after{
+    vertical-align: 0.155em;
+}
+.main-menu .dropdown-menu li{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.main-menu .dropdown-menu .dropdown-menu{
+    top: -1px;
+    left: 100%;
+}
+.main-menu ul li ul{
+	box-sizing: border-box;
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 999;
+	min-width: 10rem;
+	padding: .5rem 0;
+	background:var(--branco);
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: .25rem;
+	border-top: 3px solid var(--cor-linha-detalhe);
+	margin-left: -2px
+}
+.main-menu ul li ul li ul{
+	border: 1px solid rgba(0, 0, 0, .15);
+	padding: 0;
+}
+.menu-menu{
+	border-top: none;
+}
+.collapse:not(.show) {
+	display:inline;
+}
+.accordion-collapse:not(.show) {
+	display:none;
+}
+.main-menu ul li ul{
+	width:auto;
+}
+.banner-noticia-governo{
+	height:170px
+}
+.nav-link{
+    color:#102B3F;
+    text-transform: uppercase;
+}
+
+#search-page{
+    margin: 40px auto;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: #797979;
+}
+
+.card-body a:hover {
+    text-decoration: none;
+    color: #1a1919;
+    font-weight: 700;
+}
+
+.card-body a h5{
+    color: #102B3F;
+}
+
+.data-noticia{
+    font-size: .8em;
+    line-height: 10px;
+}
+
+.categorias-pg-titulo{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.lista-categorias{
+    margin: 40px auto;
+}
+.lista-categorias-post{
+    margin-top: 20px;
+}
+
+.paginacao ul {
+	display: block;
+	text-align: center
+}
+
+.paginacao li {
+	display: inline
+}
+
+.paginacao li a {
+	display: inline-block;
+	padding: 5px 15px;
+	background:#102B3F;
+	border-radius: 3px;
+	margin: 0 5px;
+	font-size: 13px;
+    text-decoration: none;
+    color: #f1f1f1;
+    margin-top: 20px;
+}
+
+.paginacao li.active a, .paginacao li a:hover {
+	background: #ffffff;
+	color:#102B3F
+}
+
+.economia-widget{
+	padding: 30px 10px;
+}
+.indicadores-financeiros-interno{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	border-top:0.5px solid #39799374
+}
+#cotacao_dolar,#cotacao_euro{
+	min-width:150px;
+	padding:20px;
+	
+}
+#cotacao_bitcoin{
+	width:380px;
+	padding:20px;
+    border-top:0.5px solid #3979936e
+}
+
+
+.guiaPolicial-bloco{
+    margin-top: 70px;
+    background: #FFFFFF;
+}
+
+.guiaPolicial-policial{
+    display: flex;
+}
+.guiaPolicial-policial-p1{
+    max-width: 40%;
+}
+.guiaPolicial-policial-p2{
+    max-width: 30%;
+}
+.guiaPolicial-policial-p3{
+    max-width: 30%;
+}
+.guiaPolicial-post img{
+    height: 300px;
+    width: 100%;
+}
+
+@media(max-width:767px){
+	.main-menu ul li{
+		width:55%;
+		text-align: left;
+		margin:0 0px;
+		padding: 0 10px;
+	}
+	.collapse:not(.show) {
+		display:none;
+	}
+	.main-menu ul li ul li{
+		text-align: left;
+		position: relative;
+		width: 70%;
+		background: transparent;
+	}
+	.dropdown-menu lu li ul li{
+		background-color: transparent;
+		border: none;
+	}
+    .guiaMais,
+    .economia,
+
+    .guiaPolitico,
+    .guia,
+    .guiaPolicial,
+    .guiaGeral-noticias,
+    .guiaPolitico-noticias,
+    .economia-post,
+    .guiaMais-post,
+    .guiaPolitico-post,
+    .guiaPolitico-post-div-mini{
+        display: block;
+    }
+    
+    .guiaPolitico-noticias-p1,
+    .guiaPolicial-policial-p1,
+    .guiaPolitico-noticias-p2,
+    .guiaPolicial-policial-p2,
+    .guiaPolitico-post-div-mini img,
+    .guiaPolitico-propaganda,
+    .guiaMais-ultimas-noticias,
+    .guiaMais-post-div,
+    .guiaMais-txt,
+    .guiaGeral-post-div,
+    .economia-post-div,
+    .economia-txt{
+        width: 100%;
+    }
+    .guiaPolitico-propaganda,
+    .economia-propaganda,
+    .economia-widget,
+    .guiaMais-bloco{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .guiaGeral-post-div{
+        padding: 10px;
+    }
+    .guia-noticias{
+        flex-wrap: wrap;
+    }
+  
+}
+
+@media(max-width:700px){
+	#comunicado_eleitoral{
+		width:100%;
+	}
+	.topo .sub-header{
+		padding:0px 0px;
+	}
+	.topo{
+		padding-bottom:0px;
+	}
+}
+
+
+.wp-block-image img{
+    width: 1300px;
+}
+
+.lista-categorias-row{
+    max-width: 900px;
+}
+
+.guia{
+    border-top: #102B3F 5px solid;
+    display: flex;
+    margin-top: 50px;
+}
+.guia-bloco{
+    margin-top: 70px;
+    background: #FFFFFF;
+    display: block;
+    width: 100%;
+}
+
+.guia a{
+    text-decoration: none;
+    color: #797979;
+}
+.guia a:hover{
+    color: #1a1919;
+    font-weight: 700;
+}
+.guia-noticias{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 10px;
+}
+.lista-categorias-box{
+    margin-bottom: 40px;
+}
+.guiaPolitico-post-div{
+    max-width: 100%;
+}
+
+.publicidade6{
+    padding: 10px;
+}
+#cotacao_bitcoin{
+	width:380px;
+	padding:20px;
+    border-top:0.5px solid #3979936e
+}
+.guiaMais-ultimas-noticias a:hover,
+.guiaPolicial-post-div:hover,
+.economia-txt:hover,
+.guiaMais-txt:hover{
+	color:#1a1919;
+	font-weight:700;
+}
+.guiaPolicial-post h3{
+	color:#102B3f
+}
+
+
+.titulo-banner-principal{
+	font-size: 28px
+}
+.destaque{
+	height:450px
+}
+.titulo-noticia h3{
+	margin-top:-80px;
+	color:#ffffff;
+}
+.destaque a:hover{
+	text-decoration:none
+}
+.destaque a{
+	text-decoration:none
+}
+a{
+	text-decoration: none
+}
